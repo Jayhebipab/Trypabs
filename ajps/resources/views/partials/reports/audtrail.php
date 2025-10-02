@@ -1,0 +1,34 @@
+<div x-data="{ openEdit: false, openCreate: false, user: {} }" class="p-6 bg-gray-100 min-h-screen">
+
+  <h1 class="text-2xl font-semibold flex items-center gap-2 mb-4">
+    Audit Trail
+  </h1>
+
+  <div class="bg-white p-4 rounded-lg shadow mb-6 flex items-center gap-2">
+    <input type="text" placeholder="Search by Company Name"
+      class="flex-1 border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded flex items-center gap-1">
+      🔍 Search
+    </button>
+    <button class="bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded flex items-center gap-1">
+      ❌ Reset
+    </button>
+  </div>
+
+  <div class="bg-white rounded-lg shadow overflow-x-auto">
+    <div class="flex justify-between items-center px-4 py-3 bg-gray-800 text-white font-semibold rounded-t-lg">
+      <span>Reports</span>
+    </div>
+    <table class="w-full text-sm text-center">
+      <thead class="text-xs uppercase bg-gray-200">
+        <tr>
+          <th class="px-4 py-2">#ID</th>
+          <th class="px-4 py-2">Name</th>
+          <th class="px-4 py-2">Action</th>
+          <th class="px-4 py-2">Date</th>
+        </tr>
+      </thead>
+
+    </table>
+  </div>
+</div>
